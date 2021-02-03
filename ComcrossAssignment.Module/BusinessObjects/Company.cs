@@ -32,32 +32,180 @@ namespace ComcrossAssignment.Module.BusinessObjects
             // Place your initialization code here (https://documentation.devexpress.com/eXpressAppFramework/CustomDocument112834.aspx).
         }
         private string _name;
+        private string _address;
+        private string _postcode;
+        private string _city;
+        private string _state;
+        private string _country;
+        private string _vatid;
+        private string _www;
+        private string _email;
 
-
+        [RuleRequiredField]
+        [RuleUniqueValue]
         public string Name
         {
-            get {
+            get
+            {
                 return _name;
             }
 
-            set {
+            set
+            {
                 SetPropertyValue("Name", ref _name, value);
             }
         }
 
-        //private string _PersistentProperty;
-        //[XafDisplayName("My display name"), ToolTip("My hint message")]
-        //[ModelDefault("EditMask", "(000)-00"), Index(0), VisibleInListView(false)]
-        //[Persistent("DatabaseColumnName"), RuleRequiredField(DefaultContexts.Save)]
-        //public string PersistentProperty {
-        //    get { return _PersistentProperty; }
-        //    set { SetPropertyValue(nameof(PersistentProperty), ref _PersistentProperty, value); }
-        //}
+        [Size(1000)]
+        public string Address
+        {
+            get
+            {
+                return _address;
+            }
 
-        //[Action(Caption = "My UI Action", ConfirmationMessage = "Are you sure?", ImageName = "Attention", AutoCommit = true)]
-        //public void ActionMethod() {
-        //    // Trigger a custom business logic for the current record in the UI (https://documentation.devexpress.com/eXpressAppFramework/CustomDocument112619.aspx).
-        //    this.PersistentProperty = "Paid";
-        //}
+            set
+            {
+                SetPropertyValue("Address", ref _address, value);
+            }
+        }
+
+
+        public string Postcode
+        {
+            get
+            {
+                return _postcode;
+            }
+
+            set
+            {
+                SetPropertyValue("Postcode", ref _postcode, value);
+            }
+        }
+
+        public string City
+        {
+            get
+            {
+                return _city;
+            }
+
+            set
+            {
+                SetPropertyValue("City", ref _city, value);
+            }
+        }
+
+        public string State
+        {
+            get
+            {
+                return _state;
+            }
+
+            set
+            {
+                SetPropertyValue("State", ref _state, value);
+            }
+        }
+
+
+
+        public string Country
+        {
+            get
+            {
+                return _country;
+            }
+
+            set
+            {
+                SetPropertyValue("Country", ref _country, value);
+            }
+        }
+
+
+        [RuleRequiredField]
+        [RuleUniqueValue]
+        public string Vatid
+        {
+            get
+            {
+                return _vatid;
+            }
+
+            set
+            {
+                SetPropertyValue("Vatid", ref _vatid, value);
+            }
+        }
+
+        public string WWWW
+        {
+            get
+            {
+                return _www;
+            }
+
+            set
+            {
+                SetPropertyValue("WWW", ref _www, value);
+            }
+        }
+
+        [RuleRequiredField]
+        [RuleUniqueValue]
+        public string Email
+        {
+            get
+            {
+                return _email;
+            }
+
+            set
+            {
+                SetPropertyValue("Email", ref _email, value);
+            }
+        }
+
+        [Association]
+        public XPCollection<Projects> Projects
+        {
+            get
+            {
+                return GetCollection<Projects>(nameof(Projects));
+            }
+        }
+
+
+        [Association]
+        public XPCollection<Employee> Employees
+        {
+            get
+            {
+                return GetCollection<Employee>(nameof(Employees));
+            }
+        }
+
+        [Association]
+        public XPCollection<Task> Tasks
+        {
+            get
+            {
+                return GetCollection<Task>(nameof(Tasks));
+            }
+        }
+
+        [Association]
+        public XPCollection<OwnCompany> OwnCompany
+        {
+            get
+            {
+                return GetCollection<OwnCompany>(nameof(OwnCompany));
+            }
+        }
+
+
     }
 }

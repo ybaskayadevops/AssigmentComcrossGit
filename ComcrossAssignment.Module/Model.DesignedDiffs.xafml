@@ -1,5 +1,20 @@
-﻿<?xml version="1.0" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Application Title="ComcrossAssignment">
+  <SchemaModules>
+    <SchemaModule Name="SystemModule" Version="20.2.5.0" IsNewNode="True" />
+  </SchemaModules>
   <Views>
+    <DetailView Id="Comments_DetailView">
+      <Items>
+        <PropertyEditor Id="Comment" MaxLength="10000" />
+        <PropertyEditor Id="CommentBy" AllowEdit="False" />
+      </Items>
+    </DetailView>
+    <ListView Id="Comments_ListView">
+      <Columns>
+        <ColumnInfo Id="Comment" MaxLength="10000" />
+        <ColumnInfo Id="CommentBy" Width="182" AllowEdit="False" />
+      </Columns>
+    </ListView>
   </Views>
 </Application>
