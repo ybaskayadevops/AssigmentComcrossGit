@@ -1,5 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Application Title="ComcrossAssignment">
+  <BOModel>
+    <Class Name="ComcrossAssignment.Module.BusinessObjects.Employee">
+      <OwnMembers>
+        <Member Name="InitialPassword" AllowEdit="False" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <NavigationItems>
+    <Items>
+      <Item Id="Default">
+        <Items>
+          <Item Id="AppSettings_ListView" ViewId="AppSettings_DetailView" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
   <SchemaModules>
     <SchemaModule Name="SystemModule" Version="20.2.5.0" IsNewNode="True" />
   </SchemaModules>
@@ -14,6 +30,11 @@
       <Columns>
         <ColumnInfo Id="Comment" MaxLength="10000" />
         <ColumnInfo Id="CommentBy" Width="182" AllowEdit="False" />
+      </Columns>
+    </ListView>
+    <ListView Id="Employee_ListView">
+      <Columns>
+        <ColumnInfo Id="InitialPassword" AllowEdit="False" />
       </Columns>
     </ListView>
   </Views>

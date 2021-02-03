@@ -84,7 +84,7 @@ namespace ComcrossAssignment.Module.BusinessObjects
         {
             get
             {
-                 return _commentOn.HasValue ? this._commentOn.Value : DateTime.Now; ;
+                 return _commentOn.HasValue ? this._commentOn.Value : DateTime.Now; 
             }
 
             set

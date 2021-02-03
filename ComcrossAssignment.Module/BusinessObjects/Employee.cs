@@ -13,6 +13,7 @@ using DevExpress.Persistent.BaseImpl;
 using DevExpress.Persistent.Validation;
 using DevExpress.ExpressApp.Security;
 using DevExpress.Persistent.Base.Security;
+using System.Web.Security;
 
 namespace ComcrossAssignment.Module.BusinessObjects
 {
@@ -37,6 +38,7 @@ namespace ComcrossAssignment.Module.BusinessObjects
         private Position _position;
         private string _email;
         private string _gsm;
+        private string _initialPassword;
 
 
         [Association]
@@ -144,8 +146,30 @@ namespace ComcrossAssignment.Module.BusinessObjects
                 SetPropertyValue("GSM", ref _gsm, value);
             }
         }
+             
+        [NonPersistent]
+        public string InitialPassword
+        {
+            get
+            {
+                if (_initialPassword == null && storedPassword==null)
+                {
+                    _initialPassword = Membership.GeneratePassword(8, 1);
+                    storedPassword = _initialPassword;
+                    SetPassword(storedPassword);
+                }
 
-        
+                return _initialPassword;
+            }
+
+            set
+            {
+                SetPropertyValue("InitialPassword", ref _initialPassword, value);
+            }
+        }
+
+
+
 
         [Association("Employee-Task", UseAssociationNameAsIntermediateTableName = true)]
         public XPCollection<Task> Tasks
@@ -207,16 +231,26 @@ namespace ComcrossAssignment.Module.BusinessObjects
                 SetPropertyValue(nameof(ChangePasswordOnFirstLogon), ref changePasswordOnFirstLogon, value);
             }
         }
+
+
         private string storedPassword;
-        [Browsable(true), Size(SizeAttribute.Unlimited), Persistent, SecurityBrowsable]
-        protected string StoredPassword
+
+
+        //[RuleRequiredField(DefaultContexts.Save)]
+        [Browsable(false), Size(SizeAttribute.Unlimited), Persistent, SecurityBrowsable]
+        public string StoredPassword
         {
-            get { return storedPassword; }
-            set { storedPassword = value; }
+            get {
+               
+                return storedPassword; 
+            }
+            set { 
+                storedPassword = value; 
+            }
         }
         public bool ComparePassword(string password)
         {
-            return PasswordCryptographer.VerifyHashedPasswordDelegate(this.storedPassword, password);
+            return PasswordCryptographer.VerifyHashedPasswordDelegate(storedPassword, password);
         }
         public void SetPassword(string password)
         {

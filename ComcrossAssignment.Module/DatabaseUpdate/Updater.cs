@@ -22,8 +22,14 @@ namespace ComcrossAssignment.Module.DatabaseUpdate
         public override void UpdateDatabaseAfterUpdateSchema()
         {
             base.UpdateDatabaseAfterUpdateSchema();
-            EmployeeRole adminEmployeeRole = ObjectSpace.FindObject<EmployeeRole>(
-         new BinaryOperator("Name", SecurityStrategy.AdministratorRoleName));
+
+            if (ObjectSpace.GetObjectsCount(typeof(AppSettings), null) == 0)
+            {
+                ObjectSpace.CreateObject<AppSettings>();
+            }
+
+            EmployeeRole adminEmployeeRole = ObjectSpace.
+                FindObject<EmployeeRole>(new BinaryOperator("Name", SecurityStrategy.AdministratorRoleName));
             if (adminEmployeeRole == null)
             {
                 adminEmployeeRole = ObjectSpace.CreateObject<EmployeeRole>();
@@ -40,6 +46,7 @@ namespace ComcrossAssignment.Module.DatabaseUpdate
                 adminEmployee.SetPassword("");
                 adminEmployee.EmployeeRoles.Add(adminEmployeeRole);
             }
+            //adminEmployee.SetPassword("");
             ObjectSpace.CommitChanges();
         }
         public override void UpdateDatabaseBeforeUpdateSchema()

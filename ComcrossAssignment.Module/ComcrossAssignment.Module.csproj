@@ -104,11 +104,13 @@
       <Name>System.Data</Name>
     </Reference>
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml">
       <Name>System.XML</Name>
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BusinessObjects\AppSettings.cs" />
     <Compile Include="BusinessObjects\Comments.cs" />
     <Compile Include="BusinessObjects\Company.cs" />
     <Compile Include="BusinessObjects\Department.cs" />
@@ -121,6 +123,12 @@
     <Compile Include="BusinessObjects\Task.cs" />
     <Compile Include="BusinessObjects\TaskFiles.cs" />
     <Compile Include="BusinessObjects\TaskPictures.cs" />
+    <Compile Include="Controllers\ShowSingletonController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\ShowSingletonController.Designer.cs">
+      <DependentUpon>ShowSingletonController.cs</DependentUpon>
+    </Compile>
     <Compile Include="DatabaseUpdate\Updater.cs" />
     <Compile Include="Module.cs">
       <SubType>Component</SubType>
