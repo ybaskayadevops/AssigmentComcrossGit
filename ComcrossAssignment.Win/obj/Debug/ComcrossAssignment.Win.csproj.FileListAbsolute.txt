@@ -228,3 +228,9 @@ C:\Users\yusuf\source\repos\AssigmentComcrossGit\ComcrossAssignment.Win\obj\Debu
 C:\Users\yusuf\source\repos\AssigmentComcrossGit\ComcrossAssignment.Win\obj\Debug\ComcrossAssignment.Win.csproj.CopyComplete
 C:\Users\yusuf\source\repos\AssigmentComcrossGit\ComcrossAssignment.Win\obj\Debug\ComcrossAssignment.Win.exe
 C:\Users\yusuf\source\repos\AssigmentComcrossGit\ComcrossAssignment.Win\obj\Debug\ComcrossAssignment.Win.pdb
+C:\Users\yusuf\source\repos\AssigmentComcrossGit\ComcrossAssignment.Win\bin\Debug\DevExpress.ExpressApp.CloneObject.v20.2.dll
+C:\Users\yusuf\source\repos\AssigmentComcrossGit\ComcrossAssignment.Win\bin\Debug\DevExpress.ExpressApp.CloneObject.v20.2.xml
+C:\Users\yusuf\source\repos\AssigmentComcrossGit\ComcrossAssignment.Win\bin\Debug\de\DevExpress.ExpressApp.CloneObject.v20.2.resources.dll
+C:\Users\yusuf\source\repos\AssigmentComcrossGit\ComcrossAssignment.Win\bin\Debug\es\DevExpress.ExpressApp.CloneObject.v20.2.resources.dll
+C:\Users\yusuf\source\repos\AssigmentComcrossGit\ComcrossAssignment.Win\bin\Debug\ja\DevExpress.ExpressApp.CloneObject.v20.2.resources.dll
+C:\Users\yusuf\source\repos\AssigmentComcrossGit\ComcrossAssignment.Win\bin\Debug\ru\DevExpress.ExpressApp.CloneObject.v20.2.resources.dll

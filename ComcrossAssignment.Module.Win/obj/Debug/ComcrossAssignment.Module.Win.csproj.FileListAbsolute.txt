@@ -252,6 +252,7 @@ C:\Users\yusuf\source\repos\AssigmentComcrossGit\ComcrossAssignment.Module.Win\b
 C:\Users\yusuf\source\repos\AssigmentComcrossGit\ComcrossAssignment.Module.Win\bin\Debug\System.Data.SQLite.EF6.dll
 C:\Users\yusuf\source\repos\AssigmentComcrossGit\ComcrossAssignment.Module.Win\bin\Debug\System.Data.SQLite.Linq.dll
 C:\Users\yusuf\source\repos\AssigmentComcrossGit\ComcrossAssignment.Module.Win\bin\Debug\DevExpress.ExpressApp.Validation.v20.2.dll
+C:\Users\yusuf\source\repos\AssigmentComcrossGit\ComcrossAssignment.Module.Win\bin\Debug\DevExpress.ExpressApp.CloneObject.v20.2.dll
 C:\Users\yusuf\source\repos\AssigmentComcrossGit\ComcrossAssignment.Module.Win\bin\Debug\DevExpress.ExpressApp.Security.v20.2.dll
 C:\Users\yusuf\source\repos\AssigmentComcrossGit\ComcrossAssignment.Module.Win\bin\Debug\DevExpress.Images.v20.2.dll
 C:\Users\yusuf\source\repos\AssigmentComcrossGit\ComcrossAssignment.Module.Win\bin\Debug\DevExpress.XtraTreeList.v20.2.dll
@@ -298,6 +299,7 @@ C:\Users\yusuf\source\repos\AssigmentComcrossGit\ComcrossAssignment.Module.Win\b
 C:\Users\yusuf\source\repos\AssigmentComcrossGit\ComcrossAssignment.Module.Win\bin\Debug\JetBrains.Annotations.xml
 C:\Users\yusuf\source\repos\AssigmentComcrossGit\ComcrossAssignment.Module.Win\bin\Debug\System.Data.SQLite.xml
 C:\Users\yusuf\source\repos\AssigmentComcrossGit\ComcrossAssignment.Module.Win\bin\Debug\DevExpress.ExpressApp.Validation.v20.2.xml
+C:\Users\yusuf\source\repos\AssigmentComcrossGit\ComcrossAssignment.Module.Win\bin\Debug\DevExpress.ExpressApp.CloneObject.v20.2.xml
 C:\Users\yusuf\source\repos\AssigmentComcrossGit\ComcrossAssignment.Module.Win\bin\Debug\DevExpress.ExpressApp.Security.v20.2.xml
 C:\Users\yusuf\source\repos\AssigmentComcrossGit\ComcrossAssignment.Module.Win\bin\Debug\DevExpress.XtraTreeList.v20.2.xml
 C:\Users\yusuf\source\repos\AssigmentComcrossGit\ComcrossAssignment.Module.Win\bin\Debug\DevExpress.RichEdit.v20.2.Core.xml
@@ -377,6 +379,10 @@ C:\Users\yusuf\source\repos\AssigmentComcrossGit\ComcrossAssignment.Module.Win\b
 C:\Users\yusuf\source\repos\AssigmentComcrossGit\ComcrossAssignment.Module.Win\bin\Debug\es\DevExpress.ExpressApp.Validation.v20.2.resources.dll
 C:\Users\yusuf\source\repos\AssigmentComcrossGit\ComcrossAssignment.Module.Win\bin\Debug\ja\DevExpress.ExpressApp.Validation.v20.2.resources.dll
 C:\Users\yusuf\source\repos\AssigmentComcrossGit\ComcrossAssignment.Module.Win\bin\Debug\ru\DevExpress.ExpressApp.Validation.v20.2.resources.dll
+C:\Users\yusuf\source\repos\AssigmentComcrossGit\ComcrossAssignment.Module.Win\bin\Debug\de\DevExpress.ExpressApp.CloneObject.v20.2.resources.dll
+C:\Users\yusuf\source\repos\AssigmentComcrossGit\ComcrossAssignment.Module.Win\bin\Debug\es\DevExpress.ExpressApp.CloneObject.v20.2.resources.dll
+C:\Users\yusuf\source\repos\AssigmentComcrossGit\ComcrossAssignment.Module.Win\bin\Debug\ja\DevExpress.ExpressApp.CloneObject.v20.2.resources.dll
+C:\Users\yusuf\source\repos\AssigmentComcrossGit\ComcrossAssignment.Module.Win\bin\Debug\ru\DevExpress.ExpressApp.CloneObject.v20.2.resources.dll
 C:\Users\yusuf\source\repos\AssigmentComcrossGit\ComcrossAssignment.Module.Win\bin\Debug\de\DevExpress.ExpressApp.Security.v20.2.resources.dll
 C:\Users\yusuf\source\repos\AssigmentComcrossGit\ComcrossAssignment.Module.Win\bin\Debug\es\DevExpress.ExpressApp.Security.v20.2.resources.dll
 C:\Users\yusuf\source\repos\AssigmentComcrossGit\ComcrossAssignment.Module.Win\bin\Debug\ja\DevExpress.ExpressApp.Security.v20.2.resources.dll

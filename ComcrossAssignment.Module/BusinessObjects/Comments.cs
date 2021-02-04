@@ -16,8 +16,8 @@ namespace ComcrossAssignment.Module.BusinessObjects
 {
     [DefaultClassOptions]
 
-    [RuleCriteria("", DefaultContexts.Save, "Comment.Length> 5000",
-   "Comment Length should bigger then 5000", SkipNullOrEmptyValues = false)]
+   // [RuleCriteria("", DefaultContexts.Save, "Comment.Length> 5",
+   //"Comment Length should bigger then 5000", SkipNullOrEmptyValues = false)]
     public class Comments : XPObject
     {
         public Comments(Session session)
@@ -47,6 +47,8 @@ namespace ComcrossAssignment.Module.BusinessObjects
             }
         }
 
+        
+
         [RuleRequiredField]
         public string Comment
         {
@@ -63,14 +65,14 @@ namespace ComcrossAssignment.Module.BusinessObjects
 
         }
 
-
+        
 
         [RuleRequiredField]
         public string CommentBy
         {
             get
             {
-                return _commentBy;
+                return _commentBy!=null ? _commentBy : SecuritySystem.CurrentUserName;
             }
 
             set
